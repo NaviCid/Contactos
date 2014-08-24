@@ -7,8 +7,9 @@ function onDeviceReady() {
     options.filter = "Jacob"; 
 		options.multiple = true;
     var fields = ["displayName", "name", "phoneNumbers"];
+	alert("Antes del navigator")
     navigator.contacts.find(fields, onSuccess, onError, options);
-	
+	alert("Despues del navigator")
 }
 
 function onSuccess(contacts) {
@@ -29,8 +30,9 @@ function onSuccess(contacts) {
 
 			$('#contactsList').append(html);
 	}
-
+	alert("Termina el for")
 	$('[data-role=collapsible]').collapsible().trigger('create');
+	alert("Despues del collapsible")
 }
 
 function onError(contactError) {
