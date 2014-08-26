@@ -1,6 +1,6 @@
-document.addEventListener("deviceready", onDeviceReady, false);
+//document.addEventListener("deviceready", onDeviceReady, false);
 
-function onDeviceReady() {
+//function onDeviceReady() {
 	alert("Entra en on device ready")
     // find all contacts with 'Jacob' in any name field
     var options = new ContactFindOptions();
@@ -10,7 +10,7 @@ function onDeviceReady() {
 	alert("Antes del navigator")
     navigator.contacts.find(fields, onSuccess, onError, options);
 	alert("Despues del navigator")
-}
+//}
 
 function onSuccess(contacts) {
 	alert("Entra en on Success")
