@@ -1,7 +1,8 @@
 //document.addEventListener("deviceready", onDeviceReady, false);
 
 //function onDeviceReady() {
-	alert("Entra en on device ready")
+function principal() {
+	alert("Entra en principal")
     // find all contacts with 'Jacob' in any name field
     var options = new ContactFindOptions();
     options.filter = "Jacob"; 
@@ -10,6 +11,7 @@
 	alert("Antes del navigator")
     navigator.contacts.find(fields, onSuccess, onError, options);
 	alert("Despues del navigator")
+}
 //}
 
 function onSuccess(contacts) {
